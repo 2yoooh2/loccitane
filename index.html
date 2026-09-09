@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loccitane</title>
+
+    <!-- font -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/main.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header_inner">
+            <h1>
+                <a href="#">
+                    <img src="./img/header_logo.png" alt="loccitane logo">
+                </a>
+            </h1>
+
+            <nav class="nav_menu">
+                <ul class="nav_list">
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">COLLECTION</a></li>
+                    <li><a href="#">COMMITMENTS</a></li>
+                </ul>
+
+                <ul class="nav_icon">
+                    <li><a href="#">
+                        <img src="./img/mypage.png" alt="my page icon"></a></li>
+                    <li><a href="#">
+                        <img src="./img/cart.png" alt="cart icon"></a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="m_btn" aria-label="메뉴 열기/닫기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="side_menu">
+                <h2 class="screen_out">주메뉴영역</h2>
+                <ul class="side_links">
+                    <!-- <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">CART</a></li> -->
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">PRODUCT</a></li>                 
+                    <li><a href="#">COLLECTION</a></li>
+                    <li><a href="#">COMMITMENTS</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+        <section class="visual_wrap">
+            <div class="visual_inner">
+                <div class="bg_video">
+                    <video class="" src="./img/loccitane_intro.mp4" autoplay muted loop playsinline></video>
+                </div>
+
+                    <div class="visual_text">
+                        <strong>Essence of Nature</strong>
+                        <h2>
+                            Beautiful Scents<br>Inspired by Nature
+                        </h2>
+                        <p class="visual_text_serif">자연의 본질을 담은 향기,<br> 마음까지 채우는 순간</p>
+                    </div>
+
+
+                <div class="bg_video_indicator">
+                    <div class="progressbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_wrap">
+            <div class="about_inner">
+                <div class="about_text">
+                    <h2 data-aos="zoom-in-right" data-aos-offset="100" data-aos-duration="650">
+                        ALL ABOUT <span class="about_indent">L'OCCITANE</span>
+                    </h2>
+                    <p data-aos="zoom-in-right" data-aos-offset="100" data-aos-duration="650">L'OCCITANE EN PROVENCE는 변화를 이끌어냅니다.<br>
+                        세상을 위한 긍정적인 변화를 이끌기위해 최선을 다하고, 항상 주변의 모든 사람들이
+                        변화에 동참하도록 영감을 주기 위해 노력합니다.</p>
+                    <div class="about_btn" data-aos="fade-up" data-aos-offset="100" data-aos-duration="650">
+                        <a href="#">LEARN MORE
+                            <img src="./img/arrow.png" alt="about botton">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about_cards">
+                    <div class="about_card_nature" data-aos="fade-up" data-aos-offset="150" data-aos-duration="650">
+                        <div class="about_card">
+                            <div class="card_text">
+                                <h3>We Grow <span class="card_indent">Nature</span></h3>
+                                <p class="desc_full">
+                                    지속가능한 경작과 농업 생태학적 방법에 따라
+                                    <span class="card_desx_indent"> 유기농 재료를 재배합니다.</span>
+                                </p>
+                                <p class="desc_keyword">지속, 생태, 유기농</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about_card_wonders"
+                    data-aos="fade-up" data-aos-offset="150" data-aos-duration="650">
+                        <div class="about_card">
+                            <div class="card_text">
+                                <h3>We Reveal <span class="card_indent">Wonders</span></h3>
+                                <p class="desc_full">
+                                    자연이 그러하듯 모발과 피부에도
+                                    <span class="card_desx_indent">저마다 고유의 생태계를 가지고 있습니다.</span>
+                                </p>
+                                <p class="desc_keyword">자연, 피부, 균형</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about_card_sensations" data-aos="fade-up" data-aos-offset="150" data-aos-duration="650">
+                        <div class="about_card">
+                            <div class="card_text">
+                                <h3>We Craft <span class="card_indent">Sensations</span></h3>
+                                <p class="desc_full">감각을 자극함으로써
+                                    <span class="card_desx_indent">새로운 감각을 만들어냅니다.</span>
+                                </p>
+                                <p class="desc_keyword">감각, 자극, 창조</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about_card_locally" data-aos="fade-up" data-aos-offset="150" data-aos-duration="650">
+                        <div class="about_card">
+                            <div class="card_text">
+                                <h3>We Act <span class="card_indent">Locally</span></h3>
+                                <p class="desc_full">세상은 변화해야하며<span class="card_desx_indent">우리는 이 변화에 책임을 갖고
+                                        있습니다.</span></p>
+                                <p class="desc_keyword">지역, 책임, 변화</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="best_wrap">
+            <div class="best_bg"></div>
+            <div class="best_inner">
+                <h2>BEST</h2>
+
+                <div class="swiper bestSwiper" data-aos="fade-up" data-aos-offset="150" data-aos-duration="650">
+                    <div class="swiper-wrapper">
+
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./img/best_product_body.png"
+                                            alt="Almond Moisturizing Shower Oil image">
+                                    </a>
+                                </div>
+
+                                <div class="product_info">
+                                    <div class="product_title">
+                                        <span class="category">BODY</span>
+                                        <h3 class="product_name_kr">아몬드 모이스처라이징 샤워 오일</h3>
+                                        <p class="product_name_en">Almond Moisturizing Shower Oil</p>
+
+                                    </div>
+
+                                    <div class="product_more">
+                                        <p class="product_desc">전 세계 록시땅 베스트셀러로 프로방스와 지중해의 프리미엄 아몬드를 담아 은은한 아몬드 향과 함께
+                                            샤워만으로도
+                                            당김
+                                            없이
+                                            촉촉한 피부로 케어해줍니다.</p>
+
+                                        <a class="more_btn" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./img/best_product_hand.png"
+                                            alt="Almond Moisturizing Shower Oil image">
+                                    </a>
+                                </div>
+
+                                <div class="product_info">
+                                    <div class="product_title">
+                                        <span class="category">HAND</span>
+                                        <h3 class="product_name_kr">시어 버터 드라이 스킨 핸드크림</h3>
+                                        <p class="product_name_en">Shea Butter Dry Skin Hand Cream</p>
+
+                                    </div>
+
+                                    <div class="product_more">
+                                        <p class="product_desc">전세계 베스트셀러 핸드크림으로 보습에 최적화된 록시땅의
+                                            시어 버터 포뮬라가 선사하는 강력한 보습 파워로
+                                            손 끝에서 느껴지는 차이를 직접 경험해보세요.</p>
+
+                                        <a class="more_btn" href="#">
+                                            <span>view more</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./img/best_product_hair.png"
+                                            alt="Almond Moisturizing Shower Oil image">
+                                    </a>
+                                </div>
+
+                                <div class="product_info">
+                                    <div class="product_title">
+                                        <span class="category">HAIR</span>
+                                        <h3 class="product_name_kr">인텐시브 리페어 샴푸</h3>
+                                        <p class="product_name_en">Intensive Repair Shampoo</p>
+
+                                    </div>
+
+                                    <div class="product_more">
+                                        <p class="product_desc">자연 유래 지수 79%로 조화롭게 블렌딩된 5가지 에센셜 오일이
+                                            두피와 모발에 깊은 영양을 주어 손상모 개선 효과를 선사합니다.</p>
+
+                                        <a class="more_btn" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./img/best_product_skin.png"
+                                            alt="Almond Moisturizing Shower Oil image">
+                                    </a>
+                                </div>
+
+                                <div class="product_info">
+                                    <div class="product_title">
+                                        <span class="category">SKIN</span>
+                                        <h3 class="product_name_kr">이모르뗄 오버나이트 리셋 오일 인 세럼</h3>
+                                        <p class="product_name_en">mmortelle Overnight Reset Oil-in-Serum</p>
+
+                                    </div>
+
+                                    <div class="product_more">
+                                        <p class="product_desc">아침과 저녁 스킨 케어에 사용해 10배 더 농축된
+                                            골든 캡슐 속 이모르뗄 에센셜 오일이 피부를 진정시켜
+                                            스트레스에 노출된 피부 에너지를 리셋해줍니다.</p>
+
+                                        <a class="more_btn" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- slide 5 -->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./img/best_product_perfume.png"
+                                            alt="Almond Moisturizing Shower Oil image">
+                                    </a>
+                                </div>
+
+                                <div class="product_info">
+                                    <div class="product_title">
+                                        <span class="category">PERFUME</span>
+                                        <h3 class="product_name_kr">버베나 오 드 뚜왈렛</h3>
+                                        <p class="product_name_en">Verbena Eau de Toilette</p>
+
+                                    </div>
+
+                                    <div class="product_more">
+                                        <p class="product_desc">프로방스에서 재배된 유기농 버베나 추출물이 매혹적인 향기로
+                                            상큼한 활력을 전해주며 감각을 깨워 싱그러운 기분을 선사합니다.</p>
+
+                                        <a class="more_btn" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- slide 6 -->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="./img/best_product_home.png"
+                                            alt="Almond Moisturizing Shower Oil image">
+                                    </a>
+                                </div>
+
+                                <div class="product_info">
+                                    <div class="product_title">
+                                        <span class="category">HOME</span>
+                                        <h3 class="product_name_kr">코쿤 드 세레니떼 릴랙싱 필로우 미스트</h3>
+                                        <p class="product_name_en">Coco n de Serenite Relaxing Pillow Mist</p>
+
+                                    </div>
+
+                                    <div class="product_more">
+                                        <p class="product_desc">록시땅의 베스트셀러 필로우 미스트로
+                                            잠들기 전 베개 위에 뿌려 주면 5가지 에센셜 오일이 함유된
+                                            아로마 향이 낮동안 쌓여있던 피로를 풀어주고
+                                            심신을 안정시켜 릴렉싱 효과를 줍니다.</p>
+
+                                        <a class="more_btn" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="ingredient_wrap">
+
+            <div class="ingredient_bg">
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+                <div class="circle circle4"></div>
+                <div class="circle circle5"></div>
+                <div class="circle circle6"></div>
+            </div>
+
+            <div class="ingredient_inner">
+                <div class="ingredient_intro">
+                    <h2 data-aos="fade-down" data-aos-offset="150" data-aos-duration="650">Key Ingredient</h2>
+                    <p data-aos="fade-down" data-aos-offset="150" data-aos-duration="650">록시땅은 최상의 품질을 위해
+                        원산지 확인이 가능한 천연 원료를 사용하며,
+                        윤리적인 원료 공급을 우선합니다.
+                        <span class="ingredient_intro_indent"> 록시땅만의 자연이 주는 선물을 직접 경험해보세요!</span>
+                        </p>
+                    <div class="ingredient_btn">
+                        <a href="#">LEARN MORE
+                            <img src="./img/arrow.png" alt="about botton">
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="ingredient_list">
+                    <li class="ingredient_item item_sheabutter">
+                        <div class="ingredient_img" data-aos="fade-left" data-aos-offset="150" data-aos-duration="650">
+                            <img src="./img/ingredient_sheabutter.png" alt="sheabutter">
+                        </div>
+                        <div class="ingredient_text" data-aos="fade-left" data-aos-offset="150" data-aos-duration="650">
+                            <span class="deco_text">Shea Butter</span>
+                            <h3 class="ingredient_title">시어버터</h3>
+                            <p class="ingredient_desc">
+                                아프리카 사바나에서 자란 시어나무 열매에서 얻은 시어버터는 피부에 깊은 보습과 영양을 전하며, 공정거래를 통해 지속 가능한 아름다움을 실현합니다.</p>
+                        </div>
+                    </li>
+
+                    <li class="ingredient_item item_lavender">
+                        <div class="ingredient_img" data-aos="fade-right" data-aos-offset="150" data-aos-duration="650">
+                            <img src="./img/ingredient_lavender.png" alt="Lavender">
+                        </div>
+                        <div class="ingredient_text" data-aos="fade-right" data-aos-offset="150" data-aos-duration="650">
+                            <span class="deco_text">Lavender</span>
+                            <h3 class="ingredient_title">라벤더</h3>
+                            <p class="ingredient_desc">
+                                프로방스의 깨끗한 자연에서 자란 라벤더는 부드럽고 편안한 향기로 마음의 안정을 선사하며,
+                                라벤더 에센셜 오일이 피부를 진정시키고 일상 속 스트레스를 완화하는 데 도움을 줍니다.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="ingredient_item item_almond">
+                        <div class="ingredient_img" data-aos="fade-left" data-aos-offset="150" data-aos-duration="650">
+                            <img src="./img/ingredient_almond.png" alt="Almond">
+                        </div>
+                        <div class="ingredient_text" data-aos="fade-left" data-aos-offset="150" data-aos-duration="650">
+                            <span class="deco_text">Almond</span>
+                            <h3 class="ingredient_title">아몬드</h3>
+                            <p class="ingredient_desc">
+                                햇살 가득한 프로방스 지역에서 자란 신선한 아몬드를 주원료로 한 아몬드 라인은
+                                풍부한 영양과 탄력을 피부에 전달하며, 아몬드 오일과 단백질이 피부를 부드럽고 매끄럽게 가꾸어줍니다.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="ingredient_item item_verbena">
+                        <div class="ingredient_img" data-aos="fade-right" data-aos-offset="150" data-aos-duration="650">
+                            <img src="./img/ingredient_verbena.png" alt="Verbena">
+                        </div>
+                        <div class="ingredient_text" data-aos="fade-right" data-aos-offset="150" data-aos-duration="650">
+                            <span class="deco_text">Verbena</span>
+                            <h3 class="ingredient_title">버베나</h3>
+                            <p class="ingredient_desc">
+                                상큼하고 시원한 버베나 추출물을 담은 버베나 라인은 활력과 생기를 불어넣습니다.
+                                레몬 버베나의 신선한 향기가 특징이며, 피부를 상쾌하게 가꿔줍니다.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="banner_wrap">
+            <div class="banner_inner" data-aos="zoom-out" data-aos-offset="150" data-aos-duration="650">
+                <h2>Proud to be B Corp</h2>
+                <div class="banner_text">
+                    <p>록시땅은 사람과 자연의 조화를 바탕으로, 투명하고 윤리적인 경영을 실천합니다.</p>
+                    <p class="banner_text_min">
+                        B Corp 인증을 통해 환경과 지역사회를 위한 지속 가능한 변화를 만들어가고 있습니다.
+                    </p>
+                    <p class="banner_text_max">
+                        B Corp 인증을 통해 지배 구조, 환경, 지역사회 등 다양한 영역에서 지속 가능한 가치를 만들어가고 있으며, 사회적 책임과 재무적 성과의 균형을 추구합니다.
+                    </p>
+                    <p class="banner_text_max">
+                        전 세계 6,000여 개의 B Corp 기업과 함께 더 나은 세상을 위한 긍정적인 변화를 이어갑니다.
+                    </p>
+
+                </div>
+                <div class="banner_btn">
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="commit_wrap">
+            <div class="commit_inner">
+                <div class="commit_intro" >
+                    <h2 data-aos="fade-down" data-aos-offset="150" data-aos-duration="650">Commitments</h2>
+                    <p data-aos="fade-down" data-aos-offset="150" data-aos-duration="650">록시땅의 아름다움은 자연을 지키고,
+                        사람을 돌보는 마음에서 시작됩니다. <br>
+                        그 마음을 담은 여섯 가지 실천을 이어가고 있습니다.</p>
+                </div>
+
+                <div class="swiper commitSwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- slide 1 -->
+                        <div class="swiper-slide reducing">
+                            <div class="slide_intro">
+                                <div class="bg_text">REDUCING<br>WASTE</div>
+                            </div>
+                            <div class="slide_contents">
+                                <div class="commit_imgs">
+                                    <span class="reducing_img1"></span>
+                                    <span class="reducing_img2"></span>
+                                    <span class="reducing_img3"></span>
+                                </div>
+                                <div class="commit_desc">
+                                    <span>01</span>
+                                    <strong>불필요한 낭비를 줄입니다</strong>
+                                    <p class="desc_main">록시땅은 유리병 반환과 에코 리필을 시작으로 플라스틱 저감에 힘쓰고 있습니다.</p>
+                                    <p class="desc_extra">2025년까지 100% 재활용 용기와 전 매장 재활용 서비스를 목표로,
+                                        Reduce&nbsp;&middot;&nbsp;Recycle&nbsp;&middot;&nbsp;React 원칙을 실천합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 2 -->
+                        <div class="swiper-slide respecting">
+                            <div class="slide_intro">
+                                <div class="bg_text">RESPECTING<br> BIODIVERSITY</div>
+                            </div>
+                            <div class="slide_contents">
+                                <div class="commit_imgs">
+                                    <span class="respecting_img1"></span>
+                                    <span class="respecting_img2"></span>
+                                </div>
+                                <div class="commit_desc">
+                                    <span>02</span>
+                                    <strong>자연의 다양성을 존중합니다</strong>
+                                    <p class="desc_main">
+                                        화학물질 없이 재배한 유기농 원료로, 자연의 균형과 생물다양성을 지키는 방식을 따릅니다.
+                                    </p>
+                                    <p class="desc_extra">
+                                        파트너들과 협업하며 지속 가능한 농업을 실현하고 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 3 -->
+                        <div class="swiper-slide empowering">
+                            <div class="slide_intro">
+                                <div class="bg_text">EMPOWERING<br> WOMEN</div>
+                            </div>
+                            <div class="slide_contents">
+                                <div class="commit_imgs">
+                                    <span class="empowering_img1"></span>
+                                    <span class="empowering_img2"></span>
+                                    <span class="empowering_img3"></span>
+                                </div>
+                                <div class="commit_desc">
+                                    <span>03</span>
+                                    <strong>여성의 자립을 지원합니다</strong>
+                                    <p class="desc_main">
+                                        부르키나파소 여성들의 경제적 자립을 지원하며, 시어버터를 공정하게 구매합니다.
+                                    </p>
+                                    <p class="desc_extra">
+                                        RESIST 프로그램을 통해 역량 강화와 지속 가능한 아름다움을 함께 실천합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 4 -->
+                        <div class="swiper-slide supporting">
+                            <div class="slide_intro">
+                                <div class="bg_text">SUPPORTING <br>PRODUCERS</div>
+                            </div>
+                            <div class="slide_contents">
+                                <div class="commit_imgs">
+                                    <span class="supporting_img1"></span>
+                                    <span class="supporting_img2"></span>
+                                    <span class="supporting_img3"></span>
+                                </div>
+                                <div class="commit_desc">
+                                    <span>04</span>
+                                    <strong>생산자와 함께 성장합니다</strong>
+                                    <p class="desc_main">
+                                        30년 넘는 신뢰를 바탕으로, 원료 생산자들과 장기적이고 공정한 파트너십을 이어가고 있습니다.
+                                    </p>
+                                    <p class="desc_extra">
+                                        안정적인 수입과 친환경 재배를 위한 기술 지원도 함께합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 5 -->
+                        <div class="swiper-slide celebrating">
+                            <div class="slide_intro">
+                                <div class="bg_text">CELEBRATING <br>CRAFTSMANSHIP</div>
+                            </div>
+                            <div class="slide_contents">
+                                <div class="commit_imgs">
+                                    <span class="celebrating_img1"></span>
+                                    <span class="celebrating_img2"></span>
+                                    <span class="celebrating_img3"></span>
+                                </div>
+                                <div class="commit_desc">
+                                    <span>05</span>
+                                    <strong>장인정신을 소중히 여깁니다</strong>
+                                    <p class="desc_main">
+                                        도자기, 비누, 자수 등 전통 장인들과 협업해 기술을 보호하고 전승하는 활동을 이어갑니다.
+                                    </p>
+                                    <p class="desc_extra">
+                                        2025년까지 20명의 장인을 후원하며 그 가치를 지켜나갑니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 6 -->
+                        <div class="swiper-slide caring">
+                            <div class="slide_intro">
+                                <div class="bg_text">CARING FOR<br> SIGHT</div>
+                            </div>
+                            <div class="slide_contents">
+                                <div class="commit_imgs">
+                                    <span class="caring_img1"></span>
+                                    <span class="caring_img2"></span>
+                                </div>
+                                <div class="commit_desc">
+                                    <span>06</span>
+                                    <strong>시력을 위한 활동을 이어갑니다</strong>
+                                    <p class="desc_main">
+                                        1997년부터 제품에 점자를 도입하며, 시각장애인의 권리 향상에 앞장서고 있습니다.
+                                    </p>
+                                    <p class="desc_extra">
+                                        실명 예방 캠페인과 후원을 통해 전 세계 1,500만 명의 눈 건강을 지키는 활동도 이어갑니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer_inner">
+
+            <div class="footer_cols">
+<div class="footer_col toggle ">
+                <button class="footer_title">MAISON L'OCCITANE</button>
+                <ul class="footer_list">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">6가지 약속</a></li>
+                    <li><a href="#">멤버십 프로그램</a></li>
+                    <li><a href="#">매장 찾기</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col toggle ">
+                <button class="footer_title">Support</button>
+                <ul class="footer_list">
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col toggle ">
+                <button class="footer_title">Contact Us</button>
+                <ul class="footer_list">
+                    <li><a href="#">카카오톡 상담</a></li>
+                    <li><a href="#">온라인 문의</a></li>
+                    <li><a href="#">이메일 문의</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <button class="footer_title">Social Media</button>
+                <ul class="sns_icons">
+                    <li>
+                        <a href="#"><img src="./img/instagram_icon.png" alt="instagram icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/youtube_icon.png" alt="youtube icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/X_icon.png" alt="X icon"></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            
+
+            <div class="footer_logo">
+                <img src="./img/footer_logo.png" alt="L'Occitane Logo">
+            </div>
+
+            <div class="footer_info">
+                <p class="company">상호 : 록시땅코리아 유한책임회사 | 사업자 등록 번호 : 211-87-74234 | 대표자 : 안드레조셉호프만<br>
+                주소 : 서울특별시 강남구 테헤란로 87길 36(삼성동) 도심공항타워 21층(06164) | 대표전화 : 02-2054-0500</p>
+                <p class="copy">L'OCCITANE EN PROVENCE &copy; 2025. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    
+
+</body>
+
+</html>
