@@ -226,6 +226,46 @@ main {}
     color: #fff;
 }
 
+/* visual 등장 애니메이션 */
+@keyframes heroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroVideoZoom {
+    from {
+        transform: scale(1.12);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.bg_video video {
+    animation: heroVideoZoom 1.8s ease-out both;
+}
+
+.visual_text strong,
+.visual_text h2,
+.visual_text p {
+    opacity: 0;
+    animation: heroFadeUp 0.7s ease-out forwards;
+}
+
+.visual_text strong { animation-delay: 0.2s; }
+.visual_text h2 { animation-delay: 0.4s; }
+.visual_text p { animation-delay: 0.6s; }
+
+.visual_text strong {
+    display: inline-block;
+}
+
 
 
 /* about */
@@ -868,7 +908,7 @@ main {}
 
 .banner_wrap {
     margin: 150px 0;
-    background-image: url(../img/banner.png);
+    background-image: url(../img/banner2.png);
     width: 100%;
     height: 400px;
     background-position: center;
@@ -884,11 +924,12 @@ main {}
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(0, 0, 0, 0.15);
     z-index: 0;
 }
 
 .banner_inner {
+    position: relative;
     width: 80%;
     /* border: 1px solid #C9151E; */
     text-align: center;
@@ -899,6 +940,7 @@ main {}
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .banner_text {
@@ -910,6 +952,8 @@ main {}
     font-size: 14px;
     line-height: 1.4;
     word-break: keep-all;
+    font-weight: 400;
+    color: #fff;
 }
 
 .banner_text_max {
@@ -987,6 +1031,57 @@ main {}
     justify-content: center;
     align-items: center;
     width: 70%;
+}
+
+/* 모바일: 스크롤바를 슬라이드 바로 아래로 (데스크톱은 기존 위치 유지) */
+@media screen and (max-width: 767px) {
+    .commitSwiper .desc_main {
+        margin-bottom: 30px;
+    }
+
+    .commitSwiper .swiper-scrollbar {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 70%;
+        height: 4px;
+        margin: 0 auto 70px;
+    }
+}
+
+/* 768 이상: 스크롤바를 슬라이드 바로 아래로 */
+@media screen and (min-width: 768px) {
+    .commitSwiper .desc_extra {
+        margin-bottom: 30px;
+    }
+
+    .commitSwiper .swiper-scrollbar {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 72.26%;
+        height: 4px;
+        margin: 0 auto 120px;
+    }
+}
+
+/* 1024 이상 (1750 이상 구간 포함) */
+@media screen and (min-width: 1024px) {
+    .commitSwiper .desc_extra {
+        margin-bottom: 80px;
+    }
+
+    .commitSwiper .swiper-scrollbar {
+        width: 70%;
+        margin-bottom: 120px;
+    }
+}
+
+/* 1750 이상: 슬라이드가 너무 넓어서 스크롤바는 줄여서 표시 */
+@media screen and (min-width: 1750px) {
+    .commitSwiper .swiper-scrollbar {
+        width: 70%;
+    }
 }
 
 .bg_text {
@@ -1149,26 +1244,26 @@ main {}
 .commitSwiper .swiper-slide .commit_desc {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 /* 활성 슬라이드 - 순차 등장 */
 .commitSwiper .swiper-slide-active .bg_text {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 0.1s;
+    transition-delay: 0.05s;
 }
 
 .commitSwiper .swiper-slide-active .commit_imgs {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 0.3s;
+    transition-delay: 0.15s;
 }
 
 .commitSwiper .swiper-slide-active .commit_desc {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 
 
@@ -4872,7 +4967,7 @@ footer {
 
                 .ingredient_desc {
                     font-size: 18px;
-                    width: 80%;
+                    width: 60%;
                     /* line-height: 1.4; */
                     /* margin-top: 10px;
                     font-weight: 400;
@@ -5004,7 +5099,7 @@ footer {
                 .commit_intro p {
                     /* width: 80%; */
                     font-size: 20px;
-                    line-height: 1.6;
+                    line-height: 1.4;
                     /* 
                     word-break: keep-all; */
                     margin-bottom: 110px;
