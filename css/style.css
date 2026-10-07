@@ -848,6 +848,7 @@ header.is-open .m_btn span:nth-child(3) {
     font-size: 40px;
     font-weight: 700;
     top: 0;
+    white-space: nowrap;
     color: rgba(221, 221, 221, 0.6);
 }
 
@@ -2363,18 +2364,29 @@ footer {
             .ingredient_list li {
 
                 margin-bottom: 80px;
+                gap: 20px;
             }
 
             .ingredient_list li:nth-child(odd) {
-                text-align: right;
-                align-items: flex-end;
-                flex-direction: row-reverse;
+                text-align: left;
+                align-items: flex-start;
+                flex-direction: column;
+                margin-right: 120px;
+            }
+
+            /* 오른쪽 카드: 사진·텍스트는 서로 왼쪽 정렬, 카드 통째로 오른쪽 끝에 붙임 (560px = 텍스트 박스 너비) */
+            .item_sheabutter .ingredient_img,
+            .item_sheabutter .ingredient_text,
+            .item_almond .ingredient_img,
+            .item_almond .ingredient_text {
+                margin-left: calc(100% - 560px);
             }
 
             .ingredient_list li:nth-child(even) {
                 text-align: left;
-                align-items: flex-end;
-                flex-direction: row;
+                align-items: flex-start;
+                flex-direction: column;
+                margin-left: 120px;
             }
 
             .ingredient_img {
@@ -2388,10 +2400,6 @@ footer {
             .item_verbena .ingredient_img {
                 width: 45.064%;
                 height: 500px;
-            }
-
-            .item_verbena .ingredient_img {
-                margin-bottom: 20px;
             }
 
             .item_lavender .ingredient_img,
@@ -2458,17 +2466,10 @@ footer {
 
             .ingredient_text {
 
-                flex: 1;
-                margin: 0 20px;
-            }
-
-            .item_sheabutter .ingredient_text,
-            .item_verbena .ingredient_text {
-                margin-top: 0px;
-            }
-
-            .item_verbena .ingredient_text {
-                margin-bottom: 20px;
+                flex: none;
+                width: 560px;
+                margin: 0;
+                padding: 0 20px;
             }
 
             .deco_text {
@@ -2481,13 +2482,11 @@ footer {
             }
 
             .item_sheabutter .deco_text,
-            .item_almond .deco_text {
-                right: 25px;
-            }
-
+            .item_almond .deco_text,
             .item_lavender .deco_text,
             .item_verbena .deco_text {
                 left: 25px;
+                right: auto;
             }
 
             .ingredient_title {
@@ -3037,10 +3036,6 @@ footer {
 
                 }
 
-                .item_verbena .ingredient_img {
-                    margin-bottom: 20px;
-                }
-
                 .item_lavender .ingredient_img,
                 .item_almond .ingredient_img {
                     width: 500px;
@@ -3060,13 +3055,8 @@ footer {
 
                 .ingredient_desc {
                     font-size: 18px;
-                    width: 60%;
+                    width: 100%;
 
-                }
-
-                .item_sheabutter .ingredient_desc,
-                .item_almond .ingredient_desc{
-                    float: right;
                 }
 
                 /* banner */
