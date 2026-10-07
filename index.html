@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loccitane</title>
+    <title>L'OCCITANE</title>
 
     <!-- font -->
-    <link rel="stylesheet" as="style" crossorigin
+    <link rel="stylesheet" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@
                 </ul>
             </nav>
 
-            <button type="button" class="m_btn" aria-label="메뉴 열기/닫기">
+            <button type="button" class="m_btn" aria-label="메뉴 열기/닫기" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -82,7 +82,7 @@
         <section class="visual_wrap">
             <div class="visual_inner">
                 <div class="bg_video">
-                    <video class="" src="./img/loccitane_intro.mp4" autoplay muted loop playsinline></video>
+                    <video src="./img/loccitane_intro.mp4" autoplay muted loop playsinline></video>
                 </div>
 
                     <div class="visual_text">
@@ -103,13 +103,13 @@
         <section class="about_wrap">
             <div class="about_inner">
                 <div class="about_text">
-                    <h2 data-aos="zoom-in-right">
+                    <h2 class="about_reveal about_reveal_zoom">
                         ALL ABOUT <span class="about_indent">L'OCCITANE</span>
                     </h2>
-                    <p data-aos="zoom-in-right">L'OCCITANE EN PROVENCE는 변화를 이끌어냅니다.<br>
-                        세상을 위한 긍정적인 변화를 이끌기위해 최선을 다하고, 항상 주변의 모든 사람들이
+                    <p class="about_reveal about_reveal_zoom">L'OCCITANE EN PROVENCE는 변화를 이끌어냅니다.<br>
+                        세상을 위한 긍정적인 변화를 이끌기 위해 최선을 다하고, 항상 주변의 모든 사람들이
                         변화에 동참하도록 영감을 주기 위해 노력합니다.</p>
-                    <div class="about_btn" data-aos="fade-up">
+                    <div class="about_btn about_reveal about_reveal_up">
                         <a href="#">LEARN MORE
                             <img src="./img/arrow.png" alt="learn more arrow">
                         </a>
@@ -123,7 +123,7 @@
                                 <h3>We Grow <span class="card_indent">Nature</span></h3>
                                 <p class="desc_full">
                                     지속가능한 경작과 농업 생태학적 방법에 따라
-                                    <span class="card_desx_indent"> 유기농 재료를 재배합니다.</span>
+                                    <span class="card_desc_indent"> 유기농 재료를 재배합니다.</span>
                                 </p>
                                 <p class="desc_keyword">지속, 생태, 유기농</p>
                             </div>
@@ -137,7 +137,7 @@
                                 <h3>We Reveal <span class="card_indent">Wonders</span></h3>
                                 <p class="desc_full">
                                     자연이 그러하듯 모발과 피부에도
-                                    <span class="card_desx_indent">저마다 고유의 생태계를 가지고 있습니다.</span>
+                                    <span class="card_desc_indent">저마다 고유의 생태계를 가지고 있습니다.</span>
                                 </p>
                                 <p class="desc_keyword">자연, 피부, 균형</p>
                             </div>
@@ -149,7 +149,7 @@
                             <div class="card_text">
                                 <h3>We Craft <span class="card_indent">Sensations</span></h3>
                                 <p class="desc_full">감각을 자극함으로써
-                                    <span class="card_desx_indent">새로운 감각을 만들어냅니다.</span>
+                                    <span class="card_desc_indent">새로운 감각을 만들어냅니다.</span>
                                 </p>
                                 <p class="desc_keyword">감각, 자극, 창조</p>
                             </div>
@@ -160,7 +160,7 @@
                         <div class="about_card">
                             <div class="card_text">
                                 <h3>We Act <span class="card_indent">Locally</span></h3>
-                                <p class="desc_full">세상은 변화해야하며<span class="card_desx_indent">우리는 이 변화에 책임을 갖고
+                                <p class="desc_full">세상은 변화해야 하며 <span class="card_desc_indent">우리는 이 변화에 책임을 갖고
                                         있습니다.</span></p>
                                 <p class="desc_keyword">지역, 책임, 변화</p>
                             </div>
@@ -351,7 +351,7 @@
                                     <div class="product_more">
                                         <p class="product_desc">록시땅의 베스트셀러 필로우 미스트로
                                             잠들기 전 베개 위에 뿌려 주면 5가지 에센셜 오일이 함유된
-                                            아로마 향이 낮동안 쌓여있던 피로를 풀어주고
+                                            아로마 향이 낮 동안 쌓여있던 피로를 풀어주고
                                             심신을 안정시켜 릴렉싱 효과를 줍니다.</p>
 
                                         <a class="more_btn" href="#">view more</a>
@@ -399,7 +399,7 @@
                 <ul class="ingredient_list">
                     <li class="ingredient_item item_sheabutter">
                         <div class="ingredient_img" data-aos="fade-left">
-                            <img src="./img/ingredient_sheabutter.webp" alt="sheabutter">
+                            <img src="./img/ingredient_sheabutter.webp" alt="Shea Butter">
                         </div>
                         <div class="ingredient_text" data-aos="fade-left">
                             <span class="deco_text">Shea Butter</span>
@@ -647,7 +647,7 @@
         <div class="footer_inner">
 
             <div class="footer_cols">
-<div class="footer_col toggle ">
+<div class="footer_col toggle">
                 <button class="footer_title">MAISON L'OCCITANE</button>
                 <ul class="footer_list">
                     <li><a href="#">브랜드 소개</a></li>
@@ -657,7 +657,7 @@
                 </ul>
             </div>
 
-            <div class="footer_col toggle ">
+            <div class="footer_col toggle">
                 <button class="footer_title">Support</button>
                 <ul class="footer_list">
                     <li><a href="#">자주 묻는 질문</a></li>
@@ -666,7 +666,7 @@
                 </ul>
             </div>
 
-            <div class="footer_col toggle ">
+            <div class="footer_col toggle">
                 <button class="footer_title">Contact Us</button>
                 <ul class="footer_list">
                     <li><a href="#">카카오톡 상담</a></li>
