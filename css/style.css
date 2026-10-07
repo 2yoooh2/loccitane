@@ -407,7 +407,7 @@ main {}
 
 .about_card_nature {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../img/about_nature.png") center/cover no-repeat;
+        url("../img/about_nature.webp") center/cover no-repeat;
     margin-left: auto;
     padding: 5px 0 5px 5px;
     border-radius: 2000px 0 0 2000px;
@@ -420,7 +420,7 @@ main {}
 
 .about_card_wonders {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../img/about_wonders.png") center/cover no-repeat;
+        url("../img/about_wonders.webp") center/cover no-repeat;
     margin-right: auto;
     padding: 5px 5px 5px 0;
     border-radius: 0 2000px 2000px 0;
@@ -434,7 +434,7 @@ main {}
 
 .about_card_sensations {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../img/about_sensations.png") center/cover no-repeat;
+        url("../img/about_sensations.webp") center/cover no-repeat;
     margin-left: auto;
     padding: 5px 0 5px 5px;
     border-radius: 2000px 0 0 2000px;
@@ -447,7 +447,7 @@ main {}
 
 .about_card_locally {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../img/about_locally.png") center/cover no-repeat;
+        url("../img/about_locally.webp") center/cover no-repeat;
     margin-right: auto;
     padding: 5px 5px 5px 0;
     border-radius: 0 2000px 2000px 0;
@@ -908,7 +908,7 @@ main {}
 
 .banner_wrap {
     margin: 150px 0;
-    background-image: url(../img/banner2.png);
+    background-image: url(../img/banner2.webp);
     width: 100%;
     height: 400px;
     background-position: center;
@@ -1126,82 +1126,82 @@ main {}
 
 /* slide1 */
 .commit_imgs .reducing_img1 {
-    background-image: url(../img/commit_reducingwaste1.png);
+    background-image: url(../img/commit_reducingwaste1.webp);
 }
 
 .commit_imgs .reducing_img2 {
     display: none;
-    background-image: url(../img/commit_reducingwaste2.png);
+    background-image: url(../img/commit_reducingwaste2.webp);
 }
 
 .commit_imgs .reducing_img3 {
     display: none;
-    background-image: url(../img/commit_reducingwaste3.png);
+    background-image: url(../img/commit_reducingwaste3.webp);
 }
 
 /* slide2 */
 .commit_imgs .respecting_img1 {
-    background-image: url(../img/commit_respectingbiodiversity1.png);
+    background-image: url(../img/commit_respectingbiodiversity1.webp);
 }
 
 .commit_imgs .respecting_img2 {
     display: none;
-    background-image: url(../img/commit_respectingbiodiversity2.png);
+    background-image: url(../img/commit_respectingbiodiversity2.webp);
 }
 
 /* slide3 */
 .commit_imgs .empowering_img1 {
-    background-image: url(../img/commit_empoweringwomen1.png);
+    background-image: url(../img/commit_empoweringwomen1.webp);
 }
 
 .commit_imgs .empowering_img2 {
     display: none;
-    background-image: url(../img/commit_empoweringwomen2.png);
+    background-image: url(../img/commit_empoweringwomen2.webp);
 }
 
 .commit_imgs .empowering_img3 {
     display: none;
-    background-image: url(../img/commit_empoweringwomen3.png);
+    background-image: url(../img/commit_empoweringwomen3.webp);
 }
 
 /* slide4 */
 .commit_imgs .supporting_img1 {
-    background-image: url(../img/commit_supportingproducers1.png);
+    background-image: url(../img/commit_supportingproducers1.webp);
 }
 
 .commit_imgs .supporting_img2 {
     display: none;
-    background-image: url(../img/commit_supportingproducers2.png);
+    background-image: url(../img/commit_supportingproducers2.webp);
 }
 
 .commit_imgs .supporting_img3 {
     display: none;
-    background-image: url(../img/commit_supportingproducers3.png);
+    background-image: url(../img/commit_supportingproducers3.webp);
 }
 
 /* slide5 */
 .commit_imgs .celebrating_img1 {
-    background-image: url(../img/commit_celebratingcraftsmanship1.png);
+    background-image: url(../img/commit_celebratingcraftsmanship1.webp);
 }
 
 .commit_imgs .celebrating_img2 {
     display: none;
-    background-image: url(../img/commit_celebratingcraftsmanship2.png);
+    background-image: url(../img/commit_celebratingcraftsmanship2.webp);
 }
 
 .commit_imgs .celebrating_img3 {
     display: none;
-    background-image: url(../img/commit_celebratingcraftsmanship3.png);
+    background-image: url(../img/commit_celebratingcraftsmanship3.webp);
 }
 
 /* slide6 */
 .commit_imgs .caring_img1 {
-    background-image: url(../img/commit_caringforsight1.png);
+    background-image: url(../img/commit_caringforsight1.webp);
 }
 
 .commit_imgs .caring_img2 {
     display: none;
-    background-image: url(../img/commit_caringforsight2.png);
+    background-image: url(../img/commit_caringforsight2.webp);
 }
 
 
@@ -1677,7 +1677,7 @@ footer {
 
         .about_card_nature {
             /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url("../img/about_nature.png") center/cover no-repeat;
+                url("../img/about_nature.webp") center/cover no-repeat;
             margin-left: auto;
             border-radius: 2000px 0 0 2000px; */
             padding: 15px 0 15px 15px;
@@ -1690,7 +1690,7 @@ footer {
 
         .about_card_wonders {
             /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url("../img/about_wonders.png") center/cover no-repeat;
+                url("../img/about_wonders.webp") center/cover no-repeat;
             margin-right: auto;
             border-radius: 0 2000px 2000px 0; */
             padding: 15px 15px 15px 0;
@@ -1704,7 +1704,7 @@ footer {
 
         .about_card_sensations {
             /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url("../img/about_sensations.png") center/cover no-repeat;
+                url("../img/about_sensations.webp") center/cover no-repeat;
             margin-left: auto;
             border-radius: 2000px 0 0 2000px; */
             padding: 15px 0 15px 15px;
@@ -1717,7 +1717,7 @@ footer {
 
         .about_card_locally {
             /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url("../img/about_locally.png") center/cover no-repeat;
+                url("../img/about_locally.webp") center/cover no-repeat;
             margin-right: auto;
             border-radius: 0 2000px 2000px 0; */
             padding: 15px 15px 15px 0;
@@ -2366,83 +2366,83 @@ footer {
 
         /* slide1 */
         .commit_imgs .reducing_img1 {
-            background-image: url(../img/commit_reducingwaste1.png);
+            background-image: url(../img/commit_reducingwaste1.webp);
         }
 
         .commit_imgs .reducing_img2 {
             display: block;
-            background-image: url(../img/commit_reducingwaste2.png);
+            background-image: url(../img/commit_reducingwaste2.webp);
         }
 
         /* .commit_imgs .reducing_img3 {
             display: none;
-            background-image: url(../img/commit_reducingwaste3.png);
+            background-image: url(../img/commit_reducingwaste3.webp);
         } */
 
         /* slide2 */
         /* .commit_imgs .respecting_img1 {
-            background-image: url(../img/commit_respectingbiodiversity1.png);
+            background-image: url(../img/commit_respectingbiodiversity1.webp);
         } */
 
         .commit_imgs .respecting_img2 {
             display: block;
-            background-image: url(../img/commit_respectingbiodiversity2.png);
+            background-image: url(../img/commit_respectingbiodiversity2.webp);
         }
 
         /* slide3 */
         /* .commit_imgs .empowering_img1 {
-            background-image: url(../img/commit_empoweringwomen1.png);
+            background-image: url(../img/commit_empoweringwomen1.webp);
         } */
 
         .commit_imgs .empowering_img2 {
             display: block;
-            background-image: url(../img/commit_empoweringwomen2.png);
+            background-image: url(../img/commit_empoweringwomen2.webp);
         }
 
         /* .commit_imgs .empowering_img3 {
             display: none;
-            background-image: url(../img/commit_empoweringwomen3.png);
+            background-image: url(../img/commit_empoweringwomen3.webp);
         } */
 
         /* slide4 */
         /* .commit_imgs .supporting_img1 {
-            background-image: url(../img/commit_supportingproducers1.png);
+            background-image: url(../img/commit_supportingproducers1.webp);
         } */
 
         .commit_imgs .supporting_img2 {
             display: block;
-            background-image: url(../img/commit_supportingproducers2.png);
+            background-image: url(../img/commit_supportingproducers2.webp);
         }
 
         /* 
         .commit_imgs .supporting_img3 {
             display: none;
-            background-image: url(../img/commit_supportingproducers3.png);
+            background-image: url(../img/commit_supportingproducers3.webp);
         } */
 
         /* slide5 */
         /* .commit_imgs .celebrating_img1 {
-            background-image: url(../img/commit_celebratingcraftsmanship1.png);
+            background-image: url(../img/commit_celebratingcraftsmanship1.webp);
         } */
 
         .commit_imgs .celebrating_img2 {
             display: block;
-            background-image: url(../img/commit_celebratingcraftsmanship2.png);
+            background-image: url(../img/commit_celebratingcraftsmanship2.webp);
         }
 
         /* .commit_imgs .celebrating_img3 {
             display: none;
-            background-image: url(../img/commit_celebratingcraftsmanship3.png);
+            background-image: url(../img/commit_celebratingcraftsmanship3.webp);
         } */
 
         /* slide6 */
         /* .commit_imgs .caring_img1 {
-            background-image: url(../img/commit_caringforsight1.png);
+            background-image: url(../img/commit_caringforsight1.webp);
         } */
 
         .commit_imgs .caring_img2 {
             display: block;
-            background-image: url(../img/commit_caringforsight2.png);
+            background-image: url(../img/commit_caringforsight2.webp);
         }
 
 
@@ -2967,7 +2967,7 @@ footer {
 
             .about_card_nature {
                 /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                    url("../img/about_nature.png") center/cover no-repeat;
+                    url("../img/about_nature.webp") center/cover no-repeat;
                 margin-left: auto;
                 border-radius: 2000px 0 0 2000px; */
                 /* padding: 15px; */
@@ -2981,7 +2981,7 @@ footer {
 
             .about_card_wonders {
                 /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                    url("../img/about_wonders.png") center/cover no-repeat;
+                    url("../img/about_wonders.webp") center/cover no-repeat;
                 margin-right: auto;
                 border-radius: 0 2000px 2000px 0; */
                 /* padding:  15px 15px 15px 0; */
@@ -2995,7 +2995,7 @@ footer {
 
             .about_card_sensations {
                 /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                    url("../img/about_sensations.png") center/cover no-repeat;
+                    url("../img/about_sensations.webp") center/cover no-repeat;
                 margin-left: auto;
                 border-radius: 2000px 0 0 2000px; */
                 /* padding: 15px 0 15px 15px; */
@@ -3008,7 +3008,7 @@ footer {
 
             .about_card_locally {
                 /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                    url("../img/about_locally.png") center/cover no-repeat;
+                    url("../img/about_locally.webp") center/cover no-repeat;
                 margin-right: auto;
                 border-radius: 0 2000px 2000px 0; */
                 /* padding: 15px 15px 15px 0; */
@@ -3746,97 +3746,97 @@ footer {
 
             /* slide1 */
             .commit_imgs .reducing_img1 {
-                background-image: url(../img/commit_reducingwaste1.png);
+                background-image: url(../img/commit_reducingwaste1.webp);
                 width: 26.824%;
             }
 
             .commit_imgs .reducing_img2 {
                 display: block;
-                background-image: url(../img/commit_reducingwaste2.png);
+                background-image: url(../img/commit_reducingwaste2.webp);
                 width: 44.206%;
             }
 
             .commit_imgs .reducing_img3 {
                 display: block;
-                background-image: url(../img/commit_reducingwaste3.png);
+                background-image: url(../img/commit_reducingwaste3.webp);
                 width: 26.824%;
             }
 
             /* slide2 */
             .commit_imgs .respecting_img1 {
-                background-image: url(../img/commit_respectingbiodiversity1.png);
+                background-image: url(../img/commit_respectingbiodiversity1.webp);
                 width: 59.012%;
             }
 
             .commit_imgs .respecting_img2 {
                 display: block;
-                background-image: url(../img/commit_respectingbiodiversity2.png);
+                background-image: url(../img/commit_respectingbiodiversity2.webp);
                 width: 39.914%;
             }
 
             /* slide3 */
             .commit_imgs .empowering_img1 {
-                background-image: url(../img/commit_empoweringwomen1.png);
+                background-image: url(../img/commit_empoweringwomen1.webp);
                 width: 44.206%;
             }
 
             .commit_imgs .empowering_img2 {
                 display: block;
-                background-image: url(../img/commit_empoweringwomen2.png);
+                background-image: url(../img/commit_empoweringwomen2.webp);
                 width: 26.824%;
             }
 
             .commit_imgs .empowering_img3 {
                 display: block;
-                background-image: url(../img/commit_empoweringwomen3.png);
+                background-image: url(../img/commit_empoweringwomen3.webp);
                 width: 26.824%;
             }
 
             /* slide4 */
             .commit_imgs .supporting_img1 {
-                background-image: url(../img/commit_supportingproducers1.png);
+                background-image: url(../img/commit_supportingproducers1.webp);
                 width: 26.824%;
             }
 
             .commit_imgs .supporting_img2 {
                 display: block;
-                background-image: url(../img/commit_supportingproducers2.png);
+                background-image: url(../img/commit_supportingproducers2.webp);
                 width: 44.206%;
             }
 
             .commit_imgs .supporting_img3 {
                 display: block;
-                background-image: url(../img/commit_supportingproducers3.png);
+                background-image: url(../img/commit_supportingproducers3.webp);
                 width: 26.824%;
             }
 
             /* slide5 */
             .commit_imgs .celebrating_img1 {
-                background-image: url(../img/commit_celebratingcraftsmanship1.png);
+                background-image: url(../img/commit_celebratingcraftsmanship1.webp);
                 width: 44.206%;
             }
 
             .commit_imgs .celebrating_img2 {
                 display: block;
-                background-image: url(../img/commit_celebratingcraftsmanship2.png);
+                background-image: url(../img/commit_celebratingcraftsmanship2.webp);
                 width: 26.824%;
             }
 
             .commit_imgs .celebrating_img3 {
                 display: block;
-                background-image: url(../img/commit_celebratingcraftsmanship3.png);
+                background-image: url(../img/commit_celebratingcraftsmanship3.webp);
                 width: 26.824%;
             }
 
             /* slide6 */
             .commit_imgs .caring_img1 {
-                background-image: url(../img/commit_caringforsight1.png);
+                background-image: url(../img/commit_caringforsight1.webp);
                 width: 59.012%;
             }
 
             .commit_imgs .caring_img2 {
                 display: block;
-                background-image: url(../img/commit_caringforsight2.png);
+                background-image: url(../img/commit_caringforsight2.webp);
                 width: 39.914%;
             }
 
@@ -4378,7 +4378,7 @@ footer {
 
                 .about_card_nature {
                     /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                        url("../img/about_nature.png") center/cover no-repeat;
+                        url("../img/about_nature.webp") center/cover no-repeat;
                     margin-left: auto;
                     border-radius: 2000px 0 0 2000px; */
                     /* padding: 15px; */
@@ -4392,7 +4392,7 @@ footer {
 
                 .about_card_wonders {
                     /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                        url("../img/about_wonders.png") center/cover no-repeat;
+                        url("../img/about_wonders.webp") center/cover no-repeat;
                     margin-right: auto;
                     border-radius: 0 2000px 2000px 0; */
                     /* padding:  15px 15px 15px 0; */
@@ -4406,7 +4406,7 @@ footer {
 
                 .about_card_sensations {
                     /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                        url("../img/about_sensations.png") center/cover no-repeat;
+                        url("../img/about_sensations.webp") center/cover no-repeat;
                     margin-left: auto;
                     border-radius: 2000px 0 0 2000px; */
                     /* padding: 15px 0 15px 15px; */
@@ -4419,7 +4419,7 @@ footer {
 
                 .about_card_locally {
                     /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                        url("../img/about_locally.png") center/cover no-repeat;
+                        url("../img/about_locally.webp") center/cover no-repeat;
                     margin-right: auto;
                     border-radius: 0 2000px 2000px 0; */
                     /* padding: 15px 15px 15px 0; */
@@ -5079,7 +5079,7 @@ footer {
                     z-index: -5; */
                     /* width: 220%; */
                     right: -160%;
-                    transform: skewX(-65deg);
+                    transform: skewX(-70eg);
                 }
 
                 .commit_inner{
@@ -5174,97 +5174,97 @@ footer {
 
                 /* slide1 */
                 .commit_imgs .reducing_img1 {
-                    background-image: url(../img/commit_reducingwaste1.png);
+                    background-image: url(../img/commit_reducingwaste1.webp);
                     width: 400px;
                 }
 
                 .commit_imgs .reducing_img2 {
                     display: block;
-                    background-image: url(../img/commit_reducingwaste2.png);
+                    background-image: url(../img/commit_reducingwaste2.webp);
                     width: 600px;
                 }
 
                 .commit_imgs .reducing_img3 {
                     display: block;
-                    background-image: url(../img/commit_reducingwaste3.png);
+                    background-image: url(../img/commit_reducingwaste3.webp);
                     width: 400px;
                 }
 
                 /* slide2 */
                 .commit_imgs .respecting_img1 {
-                    background-image: url(../img/commit_respectingbiodiversity1.png);
+                    background-image: url(../img/commit_respectingbiodiversity1.webp);
                     width: 600px;
                 }
 
                 .commit_imgs .respecting_img2 {
                     display: block;
-                    background-image: url(../img/commit_respectingbiodiversity2.png);
+                    background-image: url(../img/commit_respectingbiodiversity2.webp);
                     width: 800px;
                 }
 
                 /* slide3 */
                 .commit_imgs .empowering_img1 {
-                    background-image: url(../img/commit_empoweringwomen1.png);
+                    background-image: url(../img/commit_empoweringwomen1.webp);
                     width: 600px;
                 }
 
                 .commit_imgs .empowering_img2 {
                     display: block;
-                    background-image: url(../img/commit_empoweringwomen2.png);
+                    background-image: url(../img/commit_empoweringwomen2.webp);
                     width: 400px;
                 }
 
                 .commit_imgs .empowering_img3 {
                     display: block;
-                    background-image: url(../img/commit_empoweringwomen3.png);
+                    background-image: url(../img/commit_empoweringwomen3.webp);
                     width: 400px
                 }
 
                 /* slide4 */
                 .commit_imgs .supporting_img1 {
-                    background-image: url(../img/commit_supportingproducers1.png);
+                    background-image: url(../img/commit_supportingproducers1.webp);
                     width: 400px
                 }
 
                 .commit_imgs .supporting_img2 {
                     display: block;
-                    background-image: url(../img/commit_supportingproducers2.png);
+                    background-image: url(../img/commit_supportingproducers2.webp);
                     width: 600px
                 }
 
                 .commit_imgs .supporting_img3 {
                     display: block;
-                    background-image: url(../img/commit_supportingproducers3.png);
+                    background-image: url(../img/commit_supportingproducers3.webp);
                     width: 400px
                 }
 
                 /* slide5 */
                 .commit_imgs .celebrating_img1 {
-                    background-image: url(../img/commit_celebratingcraftsmanship1.png);
+                    background-image: url(../img/commit_celebratingcraftsmanship1.webp);
                     width: 600px
                 }
 
                 .commit_imgs .celebrating_img2 {
                     display: block;
-                    background-image: url(../img/commit_celebratingcraftsmanship2.png);
+                    background-image: url(../img/commit_celebratingcraftsmanship2.webp);
                     width: 400px
                 }
 
                 .commit_imgs .celebrating_img3 {
                     display: block;
-                    background-image: url(../img/commit_celebratingcraftsmanship3.png);
+                    background-image: url(../img/commit_celebratingcraftsmanship3.webp);
                     width: 400px
                 }
 
                 /* slide6 */
                 .commit_imgs .caring_img1 {
-                    background-image: url(../img/commit_caringforsight1.png);
+                    background-image: url(../img/commit_caringforsight1.webp);
                     width: 800px;
                 }
 
                 .commit_imgs .caring_img2 {
                     display: block;
-                    background-image: url(../img/commit_caringforsight2.png);
+                    background-image: url(../img/commit_caringforsight2.webp);
                     width: 600px
                 }
 
