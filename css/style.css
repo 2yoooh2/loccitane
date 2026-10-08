@@ -3046,8 +3046,7 @@ footer {
                 }
 
                 .ingredient_list {
-                    /* 카드를 .ingredient_inner(1698px) 양쪽 끝에 붙임 */
-                    width: 100%;
+                    width: 90%;
                     max-width: none;
                     margin: 0 auto;
 
@@ -3056,7 +3055,13 @@ footer {
                 /* 좌우 카드는 서로 반대편에 있어 가로로 안 겹치므로, 음수 마진으로 위아래만 살짝 겹침 */
                 .ingredient_list li {
 
-                    margin-bottom: -120px;
+                    margin-bottom: -150px;
+                }
+
+                /* 1번-2번, 아몬드-버베나 카드 사이는 더 많이 겹침 */
+                .ingredient_list li:first-child,
+                .ingredient_list .item_almond {
+                    margin-bottom: -300px;
                 }
 
                 .ingredient_list li:nth-child(odd) {
@@ -3082,10 +3087,19 @@ footer {
                 }
 
                 .item_sheabutter .ingredient_img,
-                .item_sheabutter .ingredient_text,
+                .item_sheabutter .ingredient_text {
+                    margin-left: calc(100% - 700px);
+                }
+
+                /* 라벤더/아몬드는 안쪽(가운데 방향)으로 30px */
                 .item_almond .ingredient_img,
                 .item_almond .ingredient_text {
-                    margin-left: calc(100% - 700px);
+                    margin-left: calc(100% - 700px - 30px);
+                }
+
+                .item_lavender .ingredient_img,
+                .item_lavender .ingredient_text {
+                    margin-left: 30px;
                 }
 
                 .deco_text {
