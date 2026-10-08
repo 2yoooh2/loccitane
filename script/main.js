@@ -9,6 +9,68 @@ $(document).ready(function () {
         mirror: true,
     });
 
+    // Key Ingredient 카드 등장: AOS는 스크롤 위치만 봐서 사진/텍스트 순서가 섞이므로 직접 순차 처리
+    // 사진 → 텍스트 → 다음 카드 사진 … 순서로, 앞 요소가 나온 뒤에만 다음 요소가 나옴
+    var revealEls = $('.ingredient_list .ingredient_img, .ingredient_list .ingredient_text').toArray();
+    var revealOffset = 100; // AOS offset과 동일
+    var revealBusyUntil = 0;
+    var revealTimer = null;
+    var revealTicking = false;
+
+    $('.ingredient_list').addClass('js-reveal');
+
+    // 다음 요소가 나오기까지 기다릴 시간: 사진 뒤엔 짧게, 텍스트 뒤엔 데스크탑만 등장(0.5s)이 끝날 때까지
+    function revealGap(el) {
+        if ($(el).hasClass('ingredient_img')) return 200;
+        return window.matchMedia('(min-width: 1750px)').matches ? 500 : 200;
+    }
+
+    function revealStep() {
+        var trigger = window.innerHeight - revealOffset;
+
+        // 위로 스크롤해 다시 트리거 아래로 내려간 요소는 숨김 (AOS mirror와 같은 동작)
+        revealEls.forEach(function (el) {
+            if (el.classList.contains('is-revealed') && el.getBoundingClientRect().top > trigger) {
+                el.classList.remove('is-revealed');
+            }
+        });
+
+        // 아직 안 나온 첫 요소부터 순서대로 하나씩 등장
+        for (var i = 0; i < revealEls.length; i++) {
+            var el = revealEls[i];
+            if (el.classList.contains('is-revealed')) continue;
+
+            var rect = el.getBoundingClientRect();
+            if (rect.top > trigger) return;
+
+            // 이미 화면 위로 지나간 요소는 기다리지 않고 바로 표시
+            if (rect.bottom < 0) {
+                el.classList.add('is-revealed');
+                continue;
+            }
+
+            var now = Date.now();
+            if (now < revealBusyUntil) {
+                clearTimeout(revealTimer);
+                revealTimer = setTimeout(revealStep, revealBusyUntil - now);
+                return;
+            }
+
+            el.classList.add('is-revealed');
+            revealBusyUntil = now + revealGap(el);
+        }
+    }
+
+    $(window).on('scroll resize', function () {
+        if (revealTicking) return;
+        revealTicking = true;
+        requestAnimationFrame(function () {
+            revealTicking = false;
+            revealStep();
+        });
+    });
+    revealStep();
+
     // about 텍스트(sticky) 등장: AOS는 resize 시 sticky 위치로 재계산돼 글자가 사라지므로 IntersectionObserver 사용
     var aboutWrap = document.querySelector('.about_wrap');
     if ('IntersectionObserver' in window) {

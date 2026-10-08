@@ -795,6 +795,33 @@ header.is-open .m_btn span:nth-child(3) {
     margin-bottom: 0;
 }
 
+/* 카드 등장: 사진 → 텍스트 순서를 보장하려고 AOS 대신 JS로 순차 처리 (.js-reveal은 JS가 붙임) */
+.js-reveal .ingredient_img,
+.js-reveal .ingredient_text {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.js-reveal .item_sheabutter .ingredient_img,
+.js-reveal .item_sheabutter .ingredient_text,
+.js-reveal .item_almond .ingredient_img,
+.js-reveal .item_almond .ingredient_text {
+    transform: translate3d(100px, 0, 0);
+}
+
+.js-reveal .item_lavender .ingredient_img,
+.js-reveal .item_lavender .ingredient_text,
+.js-reveal .item_verbena .ingredient_img,
+.js-reveal .item_verbena .ingredient_text {
+    transform: translate3d(-100px, 0, 0);
+}
+
+.js-reveal .ingredient_img.is-revealed,
+.js-reveal .ingredient_text.is-revealed {
+    opacity: 1;
+    transform: none;
+}
+
 .ingredient_img {
     width: 70%;
     height: 150px;
@@ -2358,6 +2385,7 @@ footer {
 
             .ingredient_list {
                 width: 91.015%;
+                max-width: 1411px;
 
             }
 
@@ -2371,22 +2399,26 @@ footer {
                 text-align: left;
                 align-items: flex-start;
                 flex-direction: column;
-                margin-right: 120px;
+                margin-right: 30px;
             }
 
-            /* 오른쪽 카드: 사진·텍스트는 서로 왼쪽 정렬, 카드 통째로 오른쪽 끝에 붙임 (560px = 텍스트 박스 너비) */
+            /* 오른쪽 카드: 사진·텍스트는 서로 왼쪽 정렬, 카드 통째로 오른쪽 끝에 붙임 (560px = 텍스트 박스 너비)
+               화면이 넓어져 사진이 560px보다 커지면 사진 너비(%) 기준으로 정렬해 사진이 오른쪽으로 넘치지 않게 함 */
             .item_sheabutter .ingredient_img,
-            .item_sheabutter .ingredient_text,
+            .item_sheabutter .ingredient_text {
+                margin-left: min(calc(100% - 560px), 54.936%);
+            }
+
             .item_almond .ingredient_img,
             .item_almond .ingredient_text {
-                margin-left: calc(100% - 560px);
+                margin-left: min(calc(100% - 560px), 44.207%);
             }
 
             .ingredient_list li:nth-child(even) {
                 text-align: left;
                 align-items: flex-start;
                 flex-direction: column;
-                margin-left: 120px;
+                margin-left: 30px;
             }
 
             .ingredient_img {
@@ -3014,32 +3046,46 @@ footer {
                 }
 
                 .ingredient_list {
-                    width: 1411px;
+                    /* 카드를 .ingredient_inner(1698px) 양쪽 끝에 붙임 */
+                    width: 100%;
+                    max-width: none;
                     margin: 0 auto;
 
                 }
 
+                /* 좌우 카드는 서로 반대편에 있어 가로로 안 겹치므로, 음수 마진으로 위아래만 살짝 겹침 */
                 .ingredient_list li {
 
-                    margin-bottom: 90px;
+                    margin-bottom: -120px;
                 }
 
-                .ingredient_img {
+                .ingredient_list li:nth-child(odd) {
+                    margin-right: 0;
+                }
 
-                    height: 250px;
+                .ingredient_list li:nth-child(even) {
+                    margin-left: 0;
+                }
 
+                /* 이미지 4개 모두 같은 크기 (리스트가 넓어져도 1411px 기준 45.064% 크기 유지) */
+                .item_sheabutter .ingredient_img,
+                .item_verbena .ingredient_img,
+                .item_lavender .ingredient_img,
+                .item_almond .ingredient_img {
+                    width: 636px;
+                    height: 500px;
+                }
+
+                /* 텍스트 박스 너비 560px → 700px, 오른쪽 카드 정렬도 같이 맞춤 */
+                .ingredient_text {
+                    width: 700px;
                 }
 
                 .item_sheabutter .ingredient_img,
-                .item_verbena .ingredient_img {
-                    width: 400px;
-
-                }
-
-                .item_lavender .ingredient_img,
-                .item_almond .ingredient_img {
-                    width: 500px;
-
+                .item_sheabutter .ingredient_text,
+                .item_almond .ingredient_img,
+                .item_almond .ingredient_text {
+                    margin-left: calc(100% - 700px);
                 }
 
                 .deco_text {
